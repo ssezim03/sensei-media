@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+a{
+  color: #333333;
+  text-decoration: none;
+}
+.swiper {
+  width: 60%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-body{
+  background: #F3F1FE;
+}
+.title-work{
+
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+}
+.big-text{
+
+  margin: 20px 0;
+  display: flex;
+  justify-content: start;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.work-price{
+
+  display: flex;
+  justify-content: space-between;
+}
+.work-price h4{
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 20px;
+  color: #333333;
+}
+.work-img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputBurger {
+  display: none;
+}
+
+.burgerLine {
+  position: absolute;
+  left: 95%;
+}
+
+.burgerIcon {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  color: orange;
+}
+
+.burgerClose {
+  top: 20px;
+  font-size: 25px;
+  color: orange;
+  position: absolute;
+  left: 95%;
+}
+
+.burgerBlock {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(4, 6, 42, 0.62);
+  position: absolute;
+  left: 0;
+  display: none;
+
+}
+
+.burger {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#burgerCheck:checked ~ .burgerBlock {
+
+  display: block;
+}
+
+#burgerCheck:checked ~ .burgerLine {
+  display: none;
+}
+
+.menuBurger {
+  font-size: 40px;
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.menuBurger a {
+  font-size: 20px;
+  color: orange;
+  text-transform: uppercase;
+  margin: 40px 0 40px 0;
+}
+
+.menuBurger a:hover {
+  border-bottom: 3px solid #f36c0a;
+}
+.burger{
+  display: none;
+}

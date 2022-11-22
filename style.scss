@@ -1,0 +1,397 @@
+@import "global";
+@import "mixin";
+@import "reset";
+@import "varables";
+@import "media";
+#header {
+  .header {
+    &--block {
+      @include between;
+
+      &__menu {
+        @include around;
+        width: 50%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &__menu a:hover {
+        border-bottom: 3px solid #FFBC2A;
+      }
+
+      &__btn {
+        @include btn;
+        transition: 2s;
+      }
+
+      &__btn:focus {
+        background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
+        color: $colorWhite;
+      }
+    }
+  }
+}
+
+#hero {
+  background: #F7F6FF;
+  padding: 80px 0;
+
+  .hero {
+    &--block {
+      @include between;
+
+      &__title {
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: $colorBlack;
+      }
+
+      &__text {
+        padding: 20px 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $colorBlack;
+      }
+
+      &__btn button {
+        margin: 0 20px;
+        @include btn;
+        transition: 2s;
+      }
+
+      &__btn button:focus {
+        background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
+        color: $colorWhite;
+      }
+
+    }
+
+    &--business {
+      margin: 60px 0 0 50px;
+      height: 230px;
+      width: 90%;
+      background: rgba(255, 255, 255, 0.46);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      color: $colorBlack;
+      padding: 30px;
+      @include text;
+
+      &__sect {
+        margin: 50px 0;
+        @include between;
+
+        &--number {
+
+          &__price {
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 48px;
+            background: linear-gradient(115.11deg, #FFBC2A 16.38%, #FF4F39 95.45%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          &__title {
+            color: $colorBlack;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#service {
+  background: #F7F6FF;
+
+  .service {
+    @include between;
+
+    &--log {
+      padding: 30px;
+      @include text;
+      color: $colorBlack;
+    }
+
+    &--block {
+
+      width: 220px;
+      height: 378px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
+      border-radius: 15px;
+
+      &__logo {
+        width: 220px;
+        height: 74px;
+        background: #77B2D3;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 15px 15px 0 0;
+        color: $colorWhite;
+        @include minitext;
+      }
+
+      &__text {
+        padding: 5px;
+        display: flex;
+        color: orange;
+
+        h1 {
+          padding: 0 5px;
+          color: $colorBlack;
+          @include block;
+        }
+      }
+
+      &__line {
+        margin: 30px 0 0 0;
+      }
+
+      &__end {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        &--dollar {
+
+          font-weight: 800;
+          font-size: 30px;
+          line-height: 24px;
+          background: linear-gradient(115.11deg, #FFBC2A 16.38%, #FF4F39 95.45%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        &--date {
+          @include block;
+          color: $colorBlack;
+        }
+      }
+
+      &__btn {
+        margin: 50px 0 0 0;
+        width: 195px;
+        @include btn;
+        transition: 2s;
+      }
+
+      &__btn:focus {
+        background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
+        color: $colorWhite;
+      }
+    }
+  }
+}
+
+#consultation {
+  background: #F7F6FF;
+  padding: 200px 0 50px 0;
+
+  .consultation {
+
+    @include between;
+
+    &--title {
+      color: $colorBlack;
+      @include text;
+    }
+
+    &--text {
+      padding: 20px 0;
+      color: $colorBlack;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &--block {
+
+      &__inputs {
+
+        &--input {
+          margin: 30px 0 30px 0;
+
+          &__line {
+            border: none;
+            color: $colorBlack;
+            padding: 0 0 0 10px;
+            width: 44%;
+            height: 59px;
+            background: #FFFFFF;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
+            border-radius: 7px;
+          }
+
+        }
+
+        &--question {
+          color: $colorBlack;
+          padding: 0 0 0 10px;
+          border: none;
+          width:90%;
+          height: 141px;
+          background: #FFFFFF;
+          box-shadow: 0 4px 18px rgba(0, 0, 0, 09);
+          border-radius: 7px;
+        }
+
+        &--checked {
+          margin: 30px 0 30px;
+          display: flex;
+
+          &__check {
+            background: #FFFFFF;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
+            border-radius: 2px;
+            width: 32px;
+            height: 32px
+          }
+
+          &__text {
+            margin: 0 0 0 10px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            color: $colorBlack;
+
+          }
+        }
+
+      }
+
+      &__button {
+        @include btn;
+        transition: 2s;
+      }
+
+      &__button:focus {
+        background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
+        color: $colorWhite;
+      }
+    }
+
+    &--img {
+      width: 40%;
+      height: 500px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
+      border-radius: 20px;
+    }
+  }
+}
+
+#work {
+  background: #F7F6FF;
+  padding: 100px 0 0 0;
+
+  .work {
+    &--log {
+      @include text;
+      color: $colorBlack;
+    }
+
+  }
+}
+
+#footer {
+  background: #FFFFFF;
+  padding: 100px 0 0 0;
+
+  .footer {
+    &--block {
+      @include between;
+
+      &__line {
+        &--title {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          text-decoration-line: underline;
+          color: $colorBlack;
+
+        }
+
+        &--btn {
+          transition: 2s;
+          margin: 20px 0;
+          @include btn;
+        }
+
+        &--btn:hover {
+          background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
+          color: $colorWhite;
+        }
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__info a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        color: #333333;
+      }
+
+      &__info a:hover {
+        border-bottom: 3px solid #FFBC2A;
+      }
+
+      &__info h1 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #333333;
+
+      }
+
+      &__end {
+
+      }
+
+      &__end h1 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #333333;
+
+      }
+
+      &__end h2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        color: #333333;
+
+      }
+    }
+
+    &--end {
+      width: 100%;
+      height: 40px;
+      background: #2D2D2D;
+
+    }
+
+    &--end h6 {
+      padding: 5px 0;
+      font-weight: 400;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+  }
+
+}

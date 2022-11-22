@@ -1,0 +1,53 @@
+@media (max-width: 1140px) {
+  #service .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #service .service--block {
+    margin: 130px 0;
+  }
+}
+@media (max-width: 1024px) {
+  #hero .hero--block__btn{
+    display: flex;
+  justify-content: space-between;
+  }
+  #consultation {
+   padding: 37px 0 50px 0;
+  }
+ 
+
+}
+@media (max-width: 992px) {
+  #hero .hero--business {
+    margin: 70px 0 0 28px;
+  }
+}
+@media (max-width: 768px) {
+  #header .header--block__menu {
+    display: none!important;
+
+  }
+  #hero .hero--block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #consultation .consultation {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+  }
+  .swiper {
+    width: 80%;
+  }
+  #hero .hero--business {
+    margin: 37px 0 0 5px !important;
+    height: 297px!important;
+  }
+  .burger{
+    display: block;
+  }
+}

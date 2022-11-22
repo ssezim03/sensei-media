@@ -1,0 +1,36 @@
+@mixin btn{
+  padding: 10px 30px;
+  background: linear-gradient(115.11deg, #FFBC2A 16.38%, #FF4F39 95.45%);
+  border-radius: 250px;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+@mixin between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin text{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+}
+@mixin minitext{
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@mixin block{
+  font-weight: 400;
+  font-size: 16px;
+  line-height:20px;
+}
