@@ -1,3 +1,379 @@
-
+@media (max-width: 1200px) {
+  #service .service--block {
+    width: 188px;
+    height: 379px;
+  }
+  #service .service--block__logo {
+    width: 188px;
+    height: 74px;
+    font-size: 14px;
+  }
+  #hero .hero--business {
+    margin: 36px 0 0 0;
+  }
+}
+@media (max-width: 1140px) {
+  #consultation .consultation--img {
+    width: 39%;
+    height: 480px;
+  }
+}
+@media (max-width: 1024px) {
+  #header .header--block__btn {
+    font-size: 10px;
+  }
+  #hero .hero--block__title {
+    font-size: 36px;
+  }
+  #hero .hero--block__text {
+    font-size: 13px;
+  }
+  #hero .hero--block__btn {
+    /* font-size: 11px; */
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+  }
+  #hero .hero--block__btn button {
+    margin: 10px;
+    padding: 9px 3px 9px 3px;
+  }
+  #hero .hero--business {
+    font-size: 24px;
+  }
+  #hero .hero--business__sect--number__price {
+    font-size: 34px;
+  }
+  #hero .hero--business__sect--number__title {
+    font-size: 12px;
+  }
+  #service .service {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+  }
+  #service .service--block {
+    width: 243px;
+    height: 373px;
+    margin: 50px;
+  }
+  #service .service--block__logo {
+    width: 243px;
+  }
+  #service .service--block__btn {
+    margin: 34px 0 0 0;
+    width: 224px;
+  }
+  #consultation .consultation--block__button {
+    margin: 10px;
+  }
+  #consultation .consultation {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  #consultation .consultation--img {
+    width: 80%;
+    height: 80%;
+  }
+  #work .work--log {
+    font-size: 28px;
+    margin: 20px;
+  }
+  .swiper {
+    width: 90%;
+    height: 100%;
+  }
+}
+@media (max-width: 992px) {
+  #hero .hero--block__img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #header .header--block__menu {
+    display: none;
+  }
+  #footer .footer--block__info {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  #header .header--block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: 36%;
+  }
+  #header .header--block__img {
+    width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  #hero .hero--block {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+  #consultation .consultation--block__inputs {
+    /* font-size: 25px; */
+    width: 100%;
+  }
+  #hero .hero--business {
+    font-size: 13px;
+  }
+  #hero .hero--business__sect--number__price {
+    font-size: 17px;
+  }
+  #hero .hero--business__sect--number__title {
+    font-size: 9px;
+  }
+  #hero .hero--business {
+    margin: 39px 0 0 0px;
+    height: 174px;
+  }
+  #hero .hero--business__sect {
+    margin: 19px 0;
+  }
+  #service .service--log {
+    padding: 1px;
+    font-size: 29px;
+  }
+  #consultation .consultation--title {
+    font-size: 19px;
+  }
+  #consultation .consultation--text {
+    padding: 0px 0;
+    font-size: 10px;
+  }
+  .swiper {
+    width: 100%;
+  }
+  #footer .footer--block__line--img {
+    width: 49%;
+  }
+  #footer .footer--block__line--btn {
+    font-size: 10px;
+  }
+  #footer .footer--block__end h2 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  #footer .footer--block__end h2 {
+    font-size: 11px;
+    line-height: 21px;
+  }
+  #hero .hero--block__title {
+    font-size: 25px;
+    padding: 0px 0;
+    line-height: 37px;
+  }
+  #hero .hero--block__text {
+    padding: 0px 0;
+    font-size: 9px;
+    line-height: 15px;
+  }
+  #hero .hero--block__btn button {
+    font-size: 9px;
+  }
+  #hero .hero--business {
+    font-size: 9px;
+    width: 80%;
+  }
+  #hero .hero--business__sect--number__price {
+    font-size: 14px;
+  }
+  #hero .hero--business__sect--number__title {
+    font-size: 5px;
+  }
+  #service .service--log {
+    font-size: 18px;
+  }
+  #service .service--block__logo {
+    width: 189px;
+    font-size: 11px;
+  }
+  #service .service--block {
+    width: 189px;
+  }
+  #service .service--block__text h1 {
+    font-size: 10px;
+  }
+  #service .service--block__end--dollar {
+    font-size: 22px;
+  }
+  #service .service--block__btn {
+    width: 180px;
+    font-size: 10px;
+  }
+  #consultation {
+    padding: 43px 0 -50px 0;
+  }
+  #consultation {
+    background: #F7F6FF;
+    padding: 43px 0 -50px 0;
+  }
+  .sliderTitle {
+    width: 70%;
+  }
+  .title-work {
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .big-text {
+    font-size: 12px;
+  }
+  .work-price h4 {
+    font-size: 7px;
+    line-height: 14px;
+  }
+  #header .header--block__btn {
+    padding: 6px 26px;
+    font-size: 7px;
+  }
+  #footer .footer--block__line--btn {
+    padding: 6px 26px;
+    font-size: 7px;
+  }
+  #hero .hero--block__img {
+    width: 80%;
+  }
+  .burgerIcon {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 390px) {
+  #consultation .consultation--title {
+    font-size: 14px;
+    line-height: 27px;
+  }
+  #consultation .consultation--text {
+    font-size: 8px;
+    line-height: 7px;
+  }
+  #consultation .consultation--block__inputs--question {
+    height: 89px;
+    font-size: 10px;
+  }
+  #consultation .consultation--block__inputs--input__line {
+    height: 40px;
+    font-size: 10px;
+  }
+  #consultation .consultation--block__inputs--checked__text {
+    font-size: 11px;
+  }
+  #consultation .consultation--block__inputs--checked__check {
+    width: 24px;
+    height: 24px;
+  }
+  #consultation .consultation--block__button {
+    margin: 0 0 10px 0;
+    font-size: 10px;
+  }
+  #consultation .consultation--block__inputs--checked {
+    margin: 24px 0 11px;
+  }
+  #consultation {
+    padding: 25px 0 50px 0;
+  }
+  #work {
+    padding: 24px 0 0 0;
+  }
+  #work .work--log {
+    font-size: 15px;
+    margin: 0 20px;
+  }
+  #footer {
+    padding: 60px 0 0 0;
+  }
+  #footer .footer--block__end h2 {
+    font-size: 8px;
+    line-height: 11px;
+  }
+  #footer .footer--block__end h1 {
+    font-size: 10px;
+    line-height: 25px;
+  }
+  #footer .footer--block__line--title {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  #footer .footer--block__line--img {
+    width: 37%;
+  }
+  #footer .footer--end {
+    height: 22px;
+  }
+  #footer .footer--end h6 {
+    font-size: 7px;
+  }
+  #footer .footer--block__line--btn {
+    margin: 9px 0;
+  }
+  #hero .hero--block__title {
+    font-size: 15px;
+    line-height: 29px;
+  }
+  #service .service--log {
+    font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .burgerLine {
+    left: 90%;
+  }
+  .title-work {
+    line-height: 9px;
+  }
+  .big-text {
+    font-size: 9px;
+    line-height: 25px;
+  }
+  #footer .footer--block__end h2 {
+    line-height: 8px;
+  }
+  #service .service--block__btn {
+    width: 166px;
+    font-size: 6px;
+  }
+  #consultation .consultation--block__button {
+    font-size: 6px;
+  }
+  #footer .footer--block__line--btn {
+    padding: 6px 10px;
+  }
+  .menuBurger a {
+    font-size: 15px;
+  }
+  #hero {
+    padding: 9px 0;
+  }
+  #consultation {
+    padding: 25px 0 17px 0;
+  }
+  #hero .hero--business__sect--number__price {
+    font-size: 8px;
+  }
+  #hero .hero--business__sect--number__title {
+    line-height: 12px;
+  }
+  #consultation .consultation--block__inputs--input__line {
+    height: 30px;
+    font-size: 8px;
+  }
+  #consultation .consultation--block__inputs--question {
+    height: 65px;
+    font-size: 7px;
+  }
+  #consultation .consultation--block__inputs--checked__text {
+    font-size: 9px;
+  }
+}
 
 /*# sourceMappingURL=media.css.map */

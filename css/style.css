@@ -18,6 +18,10 @@ a {
   height: 100%;
 }
 
+.sliderTitle {
+  width: 80%;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -155,60 +159,13 @@ a {
   display: none;
 }
 
-@media (max-width: 1140px) {
-  #service .service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #service .service--block {
-    margin: 130px 0;
-  }
-}
-@media (max-width: 1024px) {
-  #hero .hero--block__btn {
-    display: flex;
-    justify-content: space-between;
-  }
-  #consultation {
-    padding: 37px 0 50px 0;
-  }
-}
-@media (max-width: 992px) {
-  #hero .hero--business {
-    margin: 70px 0 0 28px;
-  }
-}
-@media (max-width: 768px) {
-  #header .header--block__menu {
-    display: none !important;
-  }
-  #hero .hero--block {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  #consultation .consultation {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    flex-direction: column;
-  }
-  .swiper {
-    width: 80%;
-  }
-  #hero .hero--business {
-    margin: 37px 0 0 5px !important;
-    height: 297px !important;
-  }
-  .burger {
-    display: block;
-  }
-}
 #header .header--block {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#header .header--block__img {
+  width: 20%;
 }
 #header .header--block__menu {
   display: flex;
@@ -231,9 +188,10 @@ a {
   color: #FFFFFF;
   transition: 2s;
 }
-#header .header--block__btn:focus {
+#header .header--block__btn:hover {
   background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
   color: white;
+  transform: scale(1.1);
 }
 
 #hero {
@@ -244,6 +202,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#hero .hero--block__img {
+  width: 40%;
 }
 #hero .hero--block__title {
   padding: 20px 0;
@@ -261,6 +222,9 @@ a {
   line-height: 26px;
   color: #333333;
 }
+#hero .hero--block__btn {
+  font-size: 10px;
+}
 #hero .hero--block__btn button {
   margin: 0 20px;
   padding: 10px 30px;
@@ -271,7 +235,8 @@ a {
   color: #FFFFFF;
   transition: 2s;
 }
-#hero .hero--block__btn button:focus {
+#hero .hero--block__btn button:hover {
+  transform: scale(1.1);
   background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
   color: white;
 }
@@ -391,9 +356,10 @@ a {
   color: #FFFFFF;
   transition: 2s;
 }
-#service .service--block__btn:focus {
+#service .service--block__btn:hover {
   background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
   color: white;
+  transform: scale(1.1);
 }
 
 #consultation {
@@ -418,6 +384,9 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+}
+#consultation .consultation--block__inputs {
+  font-size: 20px;
 }
 #consultation .consultation--block__inputs--input {
   margin: 30px 0 30px 0;
@@ -469,9 +438,10 @@ a {
   color: #FFFFFF;
   transition: 2s;
 }
-#consultation .consultation--block__button:focus {
+#consultation .consultation--block__button:hover {
   background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
   color: white;
+  transform: scale(1.1);
 }
 #consultation .consultation--img {
   width: 40%;
@@ -502,6 +472,9 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+#footer .footer--block__line--img {
+  width: 80%;
+}
 #footer .footer--block__line--title {
   font-weight: 400;
   font-size: 16px;
@@ -522,6 +495,7 @@ a {
 #footer .footer--block__line--btn:hover {
   background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
   color: white;
+  transform: scale(1.1);
 }
 #footer .footer--block__info {
   display: flex;

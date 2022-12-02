@@ -2,11 +2,15 @@
 @import "mixin";
 @import "reset";
 @import "varables";
-@import "media";
+
 #header {
   .header {
     &--block {
       @include between;
+
+      &__img {
+        width: 20%;
+      }
 
       &__menu {
         @include around;
@@ -25,9 +29,10 @@
         transition: 2s;
       }
 
-      &__btn:focus {
+      &__btn:hover {
         background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
         color: $colorWhite;
+        transform: scale(1.1);
       }
     }
   }
@@ -40,7 +45,9 @@
   .hero {
     &--block {
       @include between;
-
+&__img{
+  width: 40%;
+}
       &__title {
         padding: 20px 0;
         font-weight: 400;
@@ -59,13 +66,18 @@
         color: $colorBlack;
       }
 
+      &__btn {
+        font-size: 10px;
+      }
+
       &__btn button {
         margin: 0 20px;
         @include btn;
         transition: 2s;
       }
 
-      &__btn button:focus {
+      &__btn button:hover {
+        transform: scale(1.1);
         background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
         color: $colorWhite;
       }
@@ -184,9 +196,10 @@
         transition: 2s;
       }
 
-      &__btn:focus {
+      &__btn:hover {
         background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
         color: $colorWhite;
+        transform: scale(1.1);
       }
     }
   }
@@ -216,6 +229,7 @@
     &--block {
 
       &__inputs {
+        font-size: 20px;
 
         &--input {
           margin: 30px 0 30px 0;
@@ -237,7 +251,7 @@
           color: $colorBlack;
           padding: 0 0 0 10px;
           border: none;
-          width:90%;
+          width: 90%;
           height: 141px;
           background: #FFFFFF;
           box-shadow: 0 4px 18px rgba(0, 0, 0, 09);
@@ -273,9 +287,10 @@
         transition: 2s;
       }
 
-      &__button:focus {
+      &__button:hover {
         background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
         color: $colorWhite;
+        transform: scale(1.1);
       }
     }
 
@@ -311,6 +326,9 @@
       @include between;
 
       &__line {
+        &--img{
+          width:80%;
+        }
         &--title {
           font-weight: 400;
           font-size: 16px;
@@ -329,6 +347,7 @@
         &--btn:hover {
           background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
           color: $colorWhite;
+          transform: scale(1.1);
         }
       }
 
