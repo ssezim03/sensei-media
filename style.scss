@@ -4,8 +4,15 @@
 @import "varables";
 
 #header {
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background: transparent;
+  box-shadow: 1px 5px 5px rgb(217, 110, 25);
+  position: fixed;
   .header {
+
     &--block {
+
       @include between;
 
       &__img {
